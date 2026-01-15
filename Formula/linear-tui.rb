@@ -5,21 +5,21 @@
 class LinearTui < Formula
   desc "Terminal user interface for Linear"
   homepage "https://github.com/roeyazroel/linear-tui"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.5.0/linear-tui_0.5.0_darwin_amd64.tar.gz"
-      sha256 "6b7f079bf6cbc693c63a731d51309a42084aefa353d0a860e53cc210c3ef0f50"
+      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.6.0/linear-tui_0.6.0_darwin_amd64.tar.gz"
+      sha256 "a396565cf7603e487d8ae0b0ed6f641367fa6bd87d8f616e7fedb43094a051b1"
 
       def install
         bin.install "linear-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.5.0/linear-tui_0.5.0_darwin_arm64.tar.gz"
-      sha256 "3a20972cb6de4bd9fa896e2dab4f589fe3d82264b57b0e425377ae6ecab14c91"
+      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.6.0/linear-tui_0.6.0_darwin_arm64.tar.gz"
+      sha256 "3bffb32e2c3a51cfd618c8a3b4630f3bf8c125b135d05aa600c558be24adfc91"
 
       def install
         bin.install "linear-tui"
@@ -29,15 +29,15 @@ class LinearTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.5.0/linear-tui_0.5.0_linux_amd64.tar.gz"
-      sha256 "7dd81b3a248d5b31ea259a1245a45af3d025af6a972656e7343839176ff2e652"
+      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.6.0/linear-tui_0.6.0_linux_amd64.tar.gz"
+      sha256 "b5c3b3bf863479ee6e4d999ae6b793855cedc5c4f041347c21207b037f948ad3"
       def install
         bin.install "linear-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.5.0/linear-tui_0.5.0_linux_arm64.tar.gz"
-      sha256 "96c3b1c648ae6662a7f266a430c022e085357dfe1d539d2a7abcb61a7bc0864c"
+      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.6.0/linear-tui_0.6.0_linux_arm64.tar.gz"
+      sha256 "c95e7a094209a1e66e23482597d014075a466612ca9d38f595c7f462fbf8b3f6"
       def install
         bin.install "linear-tui"
       end
