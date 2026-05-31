@@ -5,23 +5,23 @@
 class LinearTui < Formula
   desc "Terminal user interface for Linear"
   homepage "https://github.com/roeyazroel/linear-tui"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.7.0/linear-tui_0.7.0_darwin_amd64.tar.gz"
-      sha256 "90a2d415d82f637074ad89ae4c852cdfc97927301394dfc9eaf7178ab0c4f847"
+      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.8.0/linear-tui_0.8.0_darwin_amd64.tar.gz"
+      sha256 "808ed6612d9a868e974ece1aca2c97564aa3dccba90ce5947cb1e3c1f307b264"
 
-      def install
+      define_method(:install) do
         bin.install "linear-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.7.0/linear-tui_0.7.0_darwin_arm64.tar.gz"
-      sha256 "82b27d238d0c2bc3f4b44eb8002ffc07faeff2a4bb8114fba254329fc73005dd"
+      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.8.0/linear-tui_0.8.0_darwin_arm64.tar.gz"
+      sha256 "c658a01587e235bd2e965cdc722437665aaffd93f6a89a6f5e664e7a6bd91b9f"
 
-      def install
+      define_method(:install) do
         bin.install "linear-tui"
       end
     end
@@ -29,16 +29,16 @@ class LinearTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.7.0/linear-tui_0.7.0_linux_amd64.tar.gz"
-      sha256 "7edc7640dd154c63039afba5ba1846f238ac4abd46565e467edb665a06abb6a1"
-      def install
+      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.8.0/linear-tui_0.8.0_linux_amd64.tar.gz"
+      sha256 "1abcd5f2bca24f8e2ea84f399102af39a349c4cbf0390cd7f98e0d32045f82ed"
+      define_method(:install) do
         bin.install "linear-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.7.0/linear-tui_0.7.0_linux_arm64.tar.gz"
-      sha256 "1f6c7322098c86442b8449d6600cd15212025fc59b4e8d7b513fab873587b10e"
-      def install
+      url "https://github.com/roeyazroel/linear-tui/releases/download/v0.8.0/linear-tui_0.8.0_linux_arm64.tar.gz"
+      sha256 "9df40c729724f066dd58153159e5c373292d3a8f727f09382bf4419d08237d60"
+      define_method(:install) do
         bin.install "linear-tui"
       end
     end
